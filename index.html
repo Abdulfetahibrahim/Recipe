@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M-Recipe</title>
+    <link rel="icon" href="images/Logo/Light-orange-M-logo.svg" />
+    <link
+      rel="icon"
+      href="images/Logo/dark-orange-M-logo.svg"
+      media="(prefer-color-scheme:dark)"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header id="header" class="hidden">
+      <div class="header">
+        <!--logo-->
+        <a class="logo" href="#"
+          ><img src="images/Logo/dark-orange-M-logo.svg" alt=""
+        /></a>
+        <div class="rightSideHeader">
+          <!--Navigation Links-->
+          <ul class="navLinks">
+            <li><a href="#" class="navLink">HOME</a></li>
+            <li><a href="#about" class="navLink">ABOUT</a></li>
+            <li><a href="#wrapper" class="navLink">RECIPES</a></li>
+            <li><a href="#contact" class="navLink">CONTACT</a></li>
+          </ul>
+          <!--Search-->
+          <form action="">
+            <input
+              class="searchBar"
+              type="search"
+              placeholder="Search..."
+              required
+            />
+            <i class="bx bx-search" id="internalSearchIcon"></i>
+          </form>
+          <!--Menu for narrow devices-->
+        </div>
+        <div class="menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+    <main id="wrapper" class="hidden">
+      <h1>
+        <span class="colored">|</span> Recommended
+        <span class="colored">recipes</span>
+      </h1>
+      <div class="recipes">
+        <!--1st recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/kitfo.webp" alt="Kitfo" />
+          <div class="content">
+            <span class="recipeTitle">Kitfo</span>
+            <p class="body">
+              Kitfo is minced raw beef marinated with mitmita and niter kibbeh,
+              served with injera or kocho.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>beef</span>
+                <span>mitmita</span>
+                <span>niter kibe</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="kitfo.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--2nd recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/tibs.webp" alt="Tibs" />
+          <div class="content">
+            <span class="recipeTitle">Tibs</span>
+            <p class="body">
+              Tibs is sautéed meat, usually beef or lamb, cooked with onions,
+              tomatoes, and spices.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>beef</span>
+                <span>onion</span>
+                <span>tomato</span>
+                <span>spices</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="Tibs.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--3rd recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/Dabo kolo.webp" alt="Dabo Kolo" />
+          <div class="content">
+            <span class="recipeTitle">Dabo Kolo</span>
+            <p class="body">
+              Dabo Kolo is a crunchy snack made from roasted dough bites
+              seasoned with chili and spices.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>flour</span>
+                <span>chili powder</span>
+                <span>oil</span>
+                <span>salt</span>
+                <span>spices</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="daboKolo.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!--4th recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/fossolia.webp" alt="Fossolia" />
+          <div class="content">
+            <span class="recipeTitle">Fossolia</span>
+            <p class="body">
+              Fossolia is a sautéed dish of green beans and carrots cooked with
+              onions, garlic, and tomatoes.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>green beans</span>
+                <span>carrots</span>
+                <span>onion</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="fossolia.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--5th recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/doro.webp" alt="doro" />
+          <div class="content">
+            <span class="recipeTitle">Doro Wat</span>
+            <p class="body">
+              Doro Wat is a spicy Ethiopian chicken stew with rich berbere
+              seasoning, served with boiled eggs and injera.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>chicken</span>
+                <span>onion</span>
+                <span>tomato</span>
+                <span>spices</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="doroWat.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--6th recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/shiro.webp" alt="Shiro" />
+          <div class="content">
+            <span class="recipeTitle">Shiro</span>
+            <p class="body">
+              Shiro is a flavorful chickpea stew, slow-cooked with garlic,
+              onions, and berbere spice.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>chickpeas</span>
+                <span>onion</span>
+                <span>garlic</span>
+                <span>berbere</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="shiro.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--7th recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/injera.webp" alt="Injera" />
+          <div class="content">
+            <span class="recipeTitle">Injera</span>
+            <p class="body">
+              Injera is a sourdough flatbread made from teff flour, used as a
+              base for Ethiopian dishes.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>teff flour</span>
+                <span>water</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="injera.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--8th recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/dulet.webp" alt="Dulet" />
+          <div class="content">
+            <span class="recipeTitle">Dulet</span>
+            <p class="body">
+              Dulet is a spicy mix of minced tripe, liver, and beef, seasoned
+              with garlic and spices.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>tripe</span>
+                <span>liver</span>
+                <span>beef</span>
+                <span>spices</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="dulet.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--9th recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/ater kik.webp" alt="Ater Kik" />
+          <div class="content">
+            <span class="recipeTitle">Ater Kik</span>
+            <p class="body">
+              Ater Kik is a mild split pea stew, seasoned with turmeric and
+              served with injera.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>split peas</span>
+                <span>turmeric</span>
+                <span>garlic</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="ater.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--10th recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/gomen.webp" alt="Gomen" />
+          <div class="content">
+            <span class="recipeTitle">Gomen</span>
+            <p class="body">
+              Gomen is a traditional Ethiopian dish made from collard greens
+              simmered with garlic and onions.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>collard greens</span>
+                <span>onion</span>
+                <span>garlic</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="gomen.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--11th recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/firfir.webp" alt="Firfir" />
+          <div class="content">
+            <span class="recipeTitle">Firfir</span>
+            <p class="body">
+              Firfir is a spicy dish made with shredded injera mixed with
+              berbere and seasoned butter.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>injera</span>
+                <span>berbere</span>
+                <span>butter</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="firfir.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--12th recipe-->
+        <div class="recipe hidden">
+          <img src="images/samples/Chechebsa.webp" alt="Chechebsa" />
+          <div class="content">
+            <span class="recipeTitle">Chechebsa</span>
+            <p class="body">
+              Chechebsa is a breakfast dish made from shredded flatbread mixed
+              with spiced butter and honey.
+            </p>
+            <div class="mainIngredient">
+              <span class="textMainIngredient">Main Ingredients:</span>
+              <div class="mainIngredients">
+                <span>flatbread</span>
+                <span>butter</span>
+                <span>honey</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="chechebsa.html"
+                >See Recipe <i class="bx bxs-right-arrow-circle"></i
+              ></a>
+              <button class="starButton"><i class="bx bxs-star"></i></button>
+            </div>
+          </div>
+        </div>
+        <!--nth recipe-->
+      </div>
+      <section id="about">
+        <h2 class="colored">About</h2>
+        <p>
+          This is your go-to destination for discovering traditional Ethiopian
+          recipes. From spicy stews like Doro Wat to crunchy snacks like Dabo
+          Kolo, our collection brings the rich flavors of Ethiopia to your
+          kitchen. Whether you're a seasoned cook or a curious foodie, explore
+          authentic recipes and learn about the ingredients that make Ethiopian
+          cuisine unique.
+        </p>
+        <div id="contact" class="hidden">
+          <a
+            href="https://www.linkedin.com/in/abdulfetah-ibrahim-adem"
+            class="link"
+            target="_blank"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a
+            href="mailto:abdulfetah6248@gmail.com"
+            class="link"
+            target="_blank"
+          >
+            <i class="bx bxs-envelope"></i>
+          </a>
+          <a href="https://t.me/Abdulfetah6248" class="link" target="_blank">
+            <i class="bx bxl-telegram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/share/1BYR6zQf5N/"
+            class="link"
+            target="_blank"
+          >
+            <i class="bx bxl-facebook"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer><span>&copy;2025 | Abdulfetah Ibrahim</span></footer>
+  </body>
+</html>

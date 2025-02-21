@@ -1,0 +1,22 @@
+#wrapper {
+  --wrapper-max-width: 63.5rem;
+  --main-padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  width: min(var(--wrapper-max-width), 100% - (var(--main-padding) * 2));
+  margin-inline: auto;
+  transform: translateY(0.625rem);
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+#wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#wrapper h1 {
+  font-size: 1.77rem;
+  font-weight: 600;
+  margin-block: 1rem 1.5rem;
+}
